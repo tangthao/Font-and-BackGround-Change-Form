@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="utf-8">
+    <script src="lab-script.js"> </script>
+</head>
+<style>
+    table, td { 
+        border:2px solid black;
+        border-collapse: collapse;
+        padding: 10%;
+        width: 50%;
+        margin:auto;
+        }
+        #class{
+            font-size:3rem;
+            text-align:center;
+            font-weight: bold;
+        }
+</style>
+<body>
+    <table>
+        <tr>
+            <td> <strong>Change font color </strong><br><br>
+                <input onclick="fontRed()" id="font-red" type="radio" name="font"> red
+                <input onclick="fontBlue()" id="font-blue" type="radio" name="font"> blue
+                <input onclick="fontGreen()" id="font-green" type="radio" name="font"> green
+            </td>
+            <td rowspan="2" id="class"> CSIS 1280</td>
+        </tr>
+        <tr> 
+            <td><strong>Change background color</strong> <br><br>
+                <select onchange="changeBground()" id="bground-option">
+                    <option  id="background-yellow" value="yellowbg" > yellow</option>
+                    <option  id="background-orange" value="orangebg"> orange</option>
+                    <option  id="background-gray" value="graybg"> gray</option>
+                </select></td>
+            
+        </tr>
+    </table>
+</body>
+</html>
