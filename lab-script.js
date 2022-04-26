@@ -18,7 +18,6 @@ function changeBground(){
     if(selectbackground=="yellowbg"){  
     var bground=document.getElementById("class");
     bground.style.backgroundColor="yellow";
-    // console.log("background yellow selected");
     }
 
     else if(selectbackground=="orangebg"){
